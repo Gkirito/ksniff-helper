@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN apk add --no-cache jq
+RUN apk add --no-cache jq docker-cli
 ENV CRICTL_VERSION=1.28.0
 ARG TARGETPLATFORM
 RUN case ${TARGETPLATFORM} in \
